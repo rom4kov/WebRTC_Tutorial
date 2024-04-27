@@ -3,8 +3,10 @@ import './style.css';
 import firebase from 'firebase/app';
 import 'firebase/firestore';
 
+console.log(import.meta.env)
+
 const firebaseConfig = {
-  apiKey: "AIzaSyAhqC6Meau-IovWAYJ5Qcp0IsYVfBiBoFE",
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
   authDomain: "webrtc-tutorial-9a8c8.firebaseapp.com",
   projectId: "webrtc-tutorial-9a8c8",
   storageBucket: "webrtc-tutorial-9a8c8.appspot.com",
